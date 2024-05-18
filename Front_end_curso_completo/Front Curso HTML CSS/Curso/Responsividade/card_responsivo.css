@@ -1,0 +1,19 @@
+body {
+    background-color: dimgray;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    font-weight: 300;
+}
+.cards_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+}
+.card {
+    background: rgb(39, 39, 39);
+    color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+}

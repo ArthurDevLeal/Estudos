@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Variável</title>
+
+        <style>
+            :root {
+                --header-height: 10rem;
+                --main-color: #ff0000;
+            }
+            html {
+                font-size: 62.5%;
+            }
+
+            header {
+                width: 100%;
+                background-color: var(--main-color);
+                height: var(--header-height);
+                font-size: 2rem;
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+
+            main {
+                min-height: calc(100vh - var(--header-height) - 2rem);
+                background-color: #ccc;
+                font-size: 2rem;
+                margin-top: var(--header-height);
+            }
+
+            footer {
+                height: 10rem;
+                font-size: 2rem;
+                background-color: var(--main-color);
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>header</header>
+        <main>main</main>
+        <footer>footer</footer>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+html {
+    height: 100%;
+}
+:root {
+    --transition: background-color 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+    font-size: 1.2rem;
+}
+header {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-size: 4rem;
+    text-shadow: 1px 1px 5px black;
+    color: black;
+}
+h1:hover {
+    background-color: #ccc;
+    border-radius: 20px;
+    padding: 0 20px;
+    transition: var(--transition);
+}
+.container {
+    margin: 0 20%;
+}
+.div__section {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+}
+span {
+    font-weight: bold;
+}
+ul {
+    list-style-type: circle;
+    padding-left: 0;
+}
+.div__section_margin {
+    margin-top: 10px;
+}
+aside {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    width: fit-content;
+}
+aside a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+a:hover {
+    background-color: #ccc;
+    border-radius: 5px;
+    transition: var(--transition);
+}

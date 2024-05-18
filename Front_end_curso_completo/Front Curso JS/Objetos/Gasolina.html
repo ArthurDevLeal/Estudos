@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Objetos</title>
+    </head>
+    <body>
+        <h1>Introducao Objetos</h1>
+        <script>
+            const carro = {
+                modelo: "Uno",
+                ano: 2023,
+                km: 10000,
+                combustivel: "Gasolina",
+                litrosConsumidos: 625,
+            };
+            document.write(
+                `O carro ${carro.modelo} ${carro.ano} fez em média ${carro.km / carro.litrosConsumidos} Km/L de ${
+                    carro.combustivel
+                }<br>`
+            );
+            const carro1 = {
+                marca: "Fiat",
+                modelo: "Uno",
+                ano: 2023,
+                km: 10000,
+                combustivel: "Gasolina",
+                litrosConsumidos: 625,
+            };
+            document.write(
+                `O carro ${carro1.marca} ${carro1.modelo}  ${carro1.ano} fez em média ${
+                    carro1.km / carro1.litrosConsumidos} Km/L de ${carro1.combustivel}`
+            );
+        </script>
+    </body>
+</html>

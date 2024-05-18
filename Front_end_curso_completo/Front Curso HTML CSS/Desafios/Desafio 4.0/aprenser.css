@@ -1,0 +1,153 @@
+:root {
+    --transition: all 1s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+html {
+    height: 100%;
+}
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif, Helvetica,
+        sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2a2a2a;
+}
+.header__ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.header__li {
+    color: #fed001;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    border: 1px solid #fed001;
+    border-radius: 10px;
+}
+.header__li:hover {
+    text-decoration: underline #fed001;
+    background-color: #141414;
+    transition: var(--transition);
+}
+.logo__page {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 3rem;
+    background-image: url(imagens/HeroImage.png),
+        linear-gradient(to top, yellow, white);
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding: 0 10% 2%;
+}
+.logo__page_a {
+    background-color: #ffcf01;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+}
+.logo__page_a:hover {
+    background-color: #dbb301;
+    transition: var(--transition);
+}
+h2 {
+    text-align: center;
+    margin: 2% 0;
+    font-size: 2rem;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10%;
+    gap: 20px;
+}
+.div__imagems_text {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(235, 235, 235);
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 0 0;
+    outline: 1px solid rgb(201, 201, 201);
+}
+.div__imagems_text:hover {
+    background-color: rgb(194, 194, 194);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.img {
+    width: 100%;
+}
+.div__imagems_text h3 {
+    font-weight: bold;
+}
+.div__a {
+    display: flex;
+    justify-content: center;
+    margin: 2% auto;
+}
+.div__a a {
+    background-color: #ffcf01;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+.div__a a:hover {
+    background-color: #dbb301;
+    transition: var(--transition);
+}
+.section__escola {
+    background-color: #003464;
+    color: white;
+    padding: 20px 20px 0 20px;
+}
+.section__flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.section__escola h4 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+.section__escola img {
+    min-width: 40%;
+}
+.section__escola p {
+    margin: 0 5%;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+.div__mapa {
+    text-align: center;
+}
+.div__mapa img {
+    min-width: 80%;
+    min-height: 80%;
+}
+.section__contatos p {
+    text-align: right;
+    margin: 0 10%;
+    font-size: 1.2rem;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2a2a;
+    color: white;
+    padding: 20px;
+}

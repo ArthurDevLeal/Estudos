@@ -1,0 +1,28 @@
+h1 {
+    color: red;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 16px;
+    color: chocolate;
+}
+
+.t1 {
+    color: darkred;
+    text-align: right;
+}
+
+p {
+    color: darkolivegreen;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+}
+a {
+    text-decoration: none;
+    font-variant: normal;
+}
+body {
+    background-color: rgb(255, 255, 255);
+}

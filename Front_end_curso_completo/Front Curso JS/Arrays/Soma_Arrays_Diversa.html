@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Arrays</title>
+    </head>
+    <body>
+        <h1>Arrays</h1>
+        <script>
+            const numeros = [1, 2, "abacaxa", null, "leite", "uva", 4, 3, 12, 2];
+
+            let soma = 0;
+
+            for (let i = 0; i < numeros.length; i++) {
+                if (typeof numeros[i] === "number") {
+                    soma += numeros[i];
+                }
+            }
+
+            console.log("Éssa e a soma da Array " + soma);
+        </script>
+    </body>
+</html>

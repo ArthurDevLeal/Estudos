@@ -1,0 +1,109 @@
+html {
+    height: 100vh;
+}
+body {
+    background-color: #c6d2ed;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.div_h2-p {
+    background-color: white;
+    width: 30%;
+    border-radius: 40px;
+    text-align: center;
+    padding: 20px 20px 0;
+}
+.div_h2-p p {
+    color: #554dde;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.div_h2-p-positions {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+.div_flex_outside {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.div_flex_inside {
+    display: flex;
+    flex-direction: column;
+}
+.div_span {
+    display: flex;
+    align-items: end;
+}
+.div_progress {
+    display: flex;
+    justify-content: space-around;
+}
+.div_dias {
+    background-color: white;
+    border-radius: 30px;
+    width: 700px;
+    padding: 30px;
+}
+span {
+    height: 200px;
+    background-color: red;
+    width: 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    list-style-position: inside;
+    margin-bottom: 0;
+    padding: 0;
+}
+li {
+    list-style-position: inside;
+    text-transform: uppercase;
+    color: #ccc;
+    font-weight: bold;
+}
+.span-50 {
+    height: 100px;
+}
+.span-70 {
+    height: 150px;
+}
+.span-20 {
+    height: 40px;
+}
+.span-40 {
+    height: 80px;
+}
+.span-90 {
+    height: 180;
+}
+.color-red {
+    background-color: #f44e77;
+}
+.color-purple {
+    background-color: #554dde;
+}
+.div_lateral h1 {
+    font-size: 3rem;
+    color: #554dde;
+}
+.div_lateral p {
+    color: #838383;
+}
+.div_lateral button {
+    border-radius: 20px;
+    background-color: rgb(5, 5, 145);
+    color: white;
+    border: none;
+    padding: 30px 70px;
+    cursor: pointer;
+}

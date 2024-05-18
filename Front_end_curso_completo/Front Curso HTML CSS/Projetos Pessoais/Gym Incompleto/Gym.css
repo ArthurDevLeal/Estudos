@@ -1,0 +1,147 @@
+:root {
+    --transitionfast: 0.2s linear;
+}
+html {
+    height: 100%;
+    font-family: "Bebas Neue";
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.div_bg-container {
+    background-image: url(ImgsGym/Rectangle\ 74.png), url(ImgsGym/Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+/*! Header */
+
+header {
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+.nav_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+.ul_nav_header {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+.ul_nav_header a {
+    text-decoration: none;
+}
+.h1_nav_header {
+    text-transform: uppercase;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+.h1_nav_header span {
+    color: #87aa38;
+}
+.li_nav_header a {
+    display: inline-block;
+    color: white;
+    font-size: 1.8rem;
+    transition: var(--transitionfast);
+}
+.li_nav_header a:hover {
+    transform: translateY(-5px);
+    transition: var(--transitionfast);
+}
+#home {
+    color: #87aa38;
+}
+.a_nav_header {
+    background-color: #87aa38;
+    padding: 20px 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 3px;
+    transition: var(--transitionfast);
+}
+.a_nav_header:hover {
+    background-color: #728f2e;
+    transition: var(--transitionfast);
+}
+
+/*! Main Logo*/
+
+.section_logopage {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 50%;
+    margin-left: 50px;
+}
+.h1_section_logo {
+    font-size: 6rem;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.h1_section_logo span {
+    color: #87aa38;
+    text-shadow: 2px 2px 2px #ffffff;
+}
+.p_section_logo {
+    color: #ccc;
+    font-family: "Poppins";
+    font-size: 0.9rem;
+}
+.button_section_logo {
+    font-family: "Bebas Neue";
+    width: fit-content;
+    padding: 30px 40px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 1px solid #87aa38;
+    color: #87aa38;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: var(--transitionfast);
+    margin-bottom: 5%;
+}
+.button_section_logo:hover {
+    transition: var(--transitionfast);
+    transform: translatex(5px);
+}
+.ul_section_logo {
+    display: flex;
+    text-align: center;
+    padding: 0;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+.li_section_logo {
+    list-style-type: none;
+}
+.li_section_logo div {
+    padding: 0 30px 0 0;
+}
+.li_section_logo div {
+    border-right: 1px solid white;
+}
+.li_section_logo h2 {
+    color: #87aa38;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.li_section_logo p {
+    color: #ccc;
+    font-family: "Poppins";
+    font-size: 0.9rem;
+}
+/*! Choose us*/
+
+.section_choose-us {
+    background-color: #121212;
+}

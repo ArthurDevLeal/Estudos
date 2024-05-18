@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Objetos</title>
+    </head>
+    <body>
+        <h1>Introducao Objetos</h1>
+        <script>
+            const produto1 = {
+                nome: "Caneta",
+                valor: 2,
+                quantidadeEstoque: 3,
+            };
+            document.write(
+                "O produto " + produto1.nome + " Custa " + produto1.valor + "R$ e tem " + produto1.quantidadeEstoque + " no estoque. <br>"
+            );
+            document.write(`${produto1.nome} custa ${produto1.valor}R$ e tem ${produto1.quantidadeEstoque} unidades em estoque`);
+        </script>
+    </body>
+</html>

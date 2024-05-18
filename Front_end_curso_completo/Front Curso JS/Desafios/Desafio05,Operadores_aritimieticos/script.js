@@ -1,0 +1,11 @@
+let x = parseInt(10);
+x += 5;
+console.log(x);
+x *= 5;
+console.log(x);
+x++;
+console.log(x);
+console.log("O resto da divisao de " + x + " Por 6 é " + (x % 6));
+console.log("O Quadrado do resto da divisao de " + x + " Por 6 é " + (x % 6) ** 2);
+x /= 4;
+console.log(x);

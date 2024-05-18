@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fit content</title>
+
+        <style>
+            .container {
+                border: 2px solid black;
+                padding: 16px;
+                width: 300px;
+                margin-bottom: 16px;
+                height: 300px;
+                overflow: auto;
+            }
+            .item {
+                background-color: blueviolet;
+                margin-bottom: 10px;
+                padding: 5px;
+            }
+            .fit-content .item {
+                width: fit-content;
+            }
+            .min-content .item {
+                width: min-content;
+            }
+            .max-content .item {
+                width: max-content;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container fit-content">
+            <div class="item">lorem</div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti, quia!
+            </div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, in
+                consequatur nam amet ab distinctio non ex placeat quibusdam,
+                reiciendis corrupti, quam neque. Quasi, eaque.
+            </div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos, facere. Repellendus, dicta corrupti. Dolore
+                excepturi obcaecati maxime et ut quidem animi, expedita
+                consequuntur voluptas fuga vitae quisquam, debitis harum tenetur
+                voluptatibus porro numquam ex, voluptate nesciunt. Cupiditate
+                commodi, vitae tempora, dicta impedit officiis libero itaque
+                architecto facilis in neque illum fugit? Minus, placeat vero vel
+                rerum magni dolorum distinctio at repellat hic pariatur soluta
+                perferendis eveniet sint rem illo commodi reiciendis saepe eos
+                perspiciatis sapiente.
+            </div>
+        </div>
+        <div class="container min-content">
+            <div class="item">lorem</div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti, quia!
+            </div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, in
+                consequatur nam amet ab distinctio non ex placeat quibusdam,
+                reiciendis corrupti, quam neque. Quasi, eaque.
+            </div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos, facere. Repellendus, dicta corrupti. Dolore
+                excepturi obcaecati maxime et ut quidem animi, expedita
+                consequuntur voluptas fuga vitae quisquam, debitis harum tenetur
+                voluptatibus porro numquam ex, voluptate nesciunt. Cupiditate
+                commodi, vitae tempora, dicta impedit officiis libero itaque
+                architecto facilis in neque illum fugit? Minus, placeat vero vel
+                rerum magni dolorum distinctio at repellat hic pariatur soluta
+                perferendis eveniet sint rem illo commodi reiciendis saepe eos
+                perspiciatis sapiente.
+            </div>
+        </div>
+        <div class="container max-content">
+            <div class="item">lorem</div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti, quia!
+            </div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, in
+                consequatur nam amet ab distinctio non ex placeat quibusdam,
+                reiciendis corrupti, quam neque. Quasi, eaque.
+            </div>
+            <div class="item">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dignissimos, facere. Repellendus, dicta corrupti. Dolore
+                excepturi obcaecati maxime et ut quidem animi, expedita
+                consequuntur voluptas fuga vitae quisquam, debitis harum tenetur
+                voluptatibus porro numquam ex, voluptate nesciunt. Cupiditate
+                commodi, vitae tempora, dicta impedit officiis libero itaque
+                architecto facilis in neque illum fugit? Minus, placeat vero vel
+                rerum magni dolorum distinctio at repellat hic pariatur soluta
+                perferendis eveniet sint rem illo commodi reiciendis saepe eos
+                perspiciatis sapiente.
+            </div>
+        </div>
+    </body>
+</html>

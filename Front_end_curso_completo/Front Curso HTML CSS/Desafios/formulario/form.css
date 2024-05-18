@@ -1,0 +1,99 @@
+:root {
+    --transition: all 0.2s;
+    --cor: rgba(255, 255, 255, 0.4);
+}
+body {
+    background-color: #181718;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    color: white;
+    margin-top: 2%;
+}
+h1 {
+    color: #ccc;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form input {
+    background-color: #181718;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: 2px solid var(--cor);
+    height: 30px;
+    margin-bottom: 20px;
+}
+form textarea {
+    background-color: #181718;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: 2px solid var(--cor);
+    height: 200px;
+}
+.submit {
+    width: fit-content;
+    height: auto;
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+.submit:hover{
+    cursor: pointer;
+}
+#text {
+    transition: var(--transition);
+}
+#text:valid {
+    border-bottom: 2px solid green;
+}
+#text:focus:invalid {
+    border-bottom: 2px solid red;
+    transition: var(--transition);
+    background-color: rgba(255, 255, 255, 0.12);
+}
+#email {
+    transition: var(--transition);
+}
+#email:valid {
+    border-bottom: 2px solid green;
+}
+#email:focus:invalid {
+    border-bottom: 2px solid red;
+    transition: var(--transition);
+    background-color: rgba(255, 255, 255, 0.12);
+}
+#assunto {
+    transition: var(--transition);
+}
+#assunto:valid{
+    border-bottom: 2px solid green;
+}
+#assunto:focus:invalid {
+    border-bottom: 2px solid red;
+    transition: var(--transition);
+    background-color: rgba(255, 255, 255, 0.12);
+}
+#message {
+    transition: var(--transition);
+}
+#message:valid {
+    border-bottom: 2px solid green;
+}
+#message:focus:invalid {
+    border-bottom: 2px solid red;
+    transition: var(--transition);
+    background-color: rgba(255, 255, 255, 0.12);
+}

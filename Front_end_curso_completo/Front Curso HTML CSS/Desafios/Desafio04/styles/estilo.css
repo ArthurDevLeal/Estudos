@@ -1,0 +1,51 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(//Desafios/Desafio04/imagens/bg-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header__titulo {
+    margin: 90px 0 30px 0;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 60px;
+}
+.header__paragrafo {
+    background-color: rgba(60, 60, 60, 0.9);
+    padding: 20px 60px;
+    color: white;
+    border-bottom: 2px solid white;
+    margin-bottom: 70px;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 940px;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+}
+.section__div__h2 {
+    background-color: rgba(60, 60, 60, 0.9);
+    color: white;
+    margin-top: 0;
+    padding: 8px;
+}
+.section__div__h2 img {
+    display: block;
+}

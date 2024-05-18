@@ -1,0 +1,56 @@
+body {
+    background-color: #96a5a7;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+}
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #434f;
+}
+form {
+    background-color: #eceff2;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 10px;
+}
+label {
+    margin: 10px 0;
+}
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+input {
+    padding: 10px 0;
+    border-radius: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+}
+.btn2 {
+    background-color: darkred;
+}
+div {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}

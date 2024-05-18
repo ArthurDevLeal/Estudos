@@ -1,0 +1,139 @@
+:root {
+    --cor_text: #5a5a5f;
+    --padding: 2rem;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--cor_text);
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: grid;
+    grid-template:
+        "header header header" 
+        "aside main main" 1fr;
+    padding: 0;
+    margin: 0;
+    color: var(--cor_text);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+img {
+    width: 100%;
+}
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div_container_dashboard {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+.div_container_dashboard svg{
+    margin-right: 1em;
+}
+.div_container_dashboard h1 {
+    padding-left: var(--padding);
+    color: black;
+    text-transform: uppercase;
+}
+.div_aboutme {
+    padding-right: var(--padding);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.div_aboutme h3 {
+    color: black;
+    margin: 0;
+}
+.div_aboutme p{
+    margin: 0;
+}
+.div_container_dashboard ul {
+    display: flex;
+    gap: 2em;
+    padding-left: var(--padding);
+}
+
+.a_header {
+    display: flex;
+    align-items: center;
+}
+aside {
+    grid-area: aside;
+    padding: 1em 5em;
+}
+aside nav {
+    display: flex;
+    flex-direction: column;
+}
+.ul_nav li{
+    margin: 1.5em 0;
+}
+.ul_nav{
+    margin-top: 0;
+}
+.a_nav{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+main {
+    grid-area: main;
+    background-color: rgba(242, 242, 248, 1);
+    padding: var(--padding);
+    display: grid;
+    grid-template: 
+    "row1 row1" 
+    "row2 row2" 1fr
+    "row3 row4" 1fr;
+    gap: var(--padding);
+}
+.section_announced{
+    grid-area: row1;
+}
+.section_announced ul{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    padding: var(--padding);
+}
+.section_announced li{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.section_announced ul li span{
+    color: blue;
+    font-size: 1.5rem;
+}
+.a_announced{
+    background-color: blue;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    color: white;
+}
+.section_img1{
+    grid-area: row2;
+}
+.section_img2{
+    grid-area: row3;
+}
+.section_img3{
+    grid-area: row4;
+}
+

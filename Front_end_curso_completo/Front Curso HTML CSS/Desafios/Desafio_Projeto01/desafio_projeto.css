@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    margin: 0;
+}
+div {
+    margin-top: 20px;
+    margin-right: 300px;
+    margin-left: 300px;
+}
+header {
+    background-image: url(imagens/bg-3.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: right center;
+    overflow: hidden;
+}
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+    background-color: rgba(79, 79, 79, 0.5);
+    margin: 10px 15px 10px 10px;
+    outline: solid white 1px;
+    color: white;
+}
+.menu ul {
+    text-align: right;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px 10px 15px;
+}
+.menu li:hover {
+    background-color: #ccc;
+}
+.titulo {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    font-size: 60px;
+    padding-top: 150px;
+}
+.subtitulo {
+    background-color: rgba(40, 40, 40, 0.7);
+    width: max-content;
+    margin: auto;
+    padding: 15px;
+    border-bottom: 1px solid white;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+section {
+    background-color: white;
+    padding: 10px;
+}
+h2 {
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+section p {
+    font-weight: 550;
+    font-size: 13px;
+    margin: auto;
+}
+section a {
+    background-color: #ccc;
+    display: block;
+    margin-top: 10px;
+    padding: 10px 15px 10px 15px;
+    width: fit-content;
+    border-radius: 10px;
+    color: blue;
+}
+section a:hover {
+    padding: 11px 16px 11px 16px;
+    background-color: gray;
+}
+
+footer {
+    background-color: gray;
+    text-align: center;
+    margin-top: 10px;
+    padding: 30px;
+    color: white;
+    text-shadow: 2px 2px px black;
+    letter-spacing: 2px;
+}

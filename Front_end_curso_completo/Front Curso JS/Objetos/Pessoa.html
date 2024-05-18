@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Objetos</title>
+    </head>
+    <body>
+        <h1>Introducao Objetos</h1>
+        <script>
+            const endereco = {
+                rua: "Rua das Tulias",
+                numero: 302,
+            };
+            const pessoa = {
+                nome: "João",
+                sobrenome: "Fagundes",
+                endereco: endereco,
+            };
+            document.write(`${pessoa.nome} ${pessoa.sobrenome} mora na ${pessoa.endereco.rua} ${pessoa.endereco.numero}`);
+
+            for(let prop in pessoa){
+                console.log(prop)
+                console.log(pessoa[prop]) // console.log(pessoa["nome"]), console.log(pessoa["sobrenome"])
+            }
+        </script>
+    </body>
+</html>

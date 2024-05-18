@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Treino Grid</title>
+        <style>
+            body,
+            html {
+                margin: 0;
+                padding: 0;
+            }
+            .div_container {
+                width: 100%;
+                height: 100vh;
+                /* GRID */
+                display: grid;
+                grid-template-rows: repeat(4, 1fr);
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas:
+                    "header header header"
+                    "sidebar  main main"
+                    "sidebar widget statistics"
+                    "footer footer footer";
+            }
+            .a1 {
+                background: red;
+                /* grid-area: 1 / 1 / 2 / -1; */
+                grid-area: header;
+            }
+            .a2 {
+                background: blue;
+                /* grid-area: 2 / 3 / 5 / -1; */
+                grid-area: main;
+            }
+            .a3 {
+                background: yellow;
+                /* grid-area: 2 / 1 / -2 / 3; */
+                grid-area: sidebar;
+            }
+            .a4 {
+                background: purple;
+                /* grid-area: 5 / 3 / 6 / span 2; */
+                grid-area: widget;
+            }
+            .a5 {
+                background: brown;
+                /* grid-area: 5 / 5 / 6 / span 2; */
+                grid-area: statistics;
+            }
+            .a6 {
+                background: green;
+                /* grid-area: 6 / 1 / 6 / -1; */
+                grid-area: footer;
+            }
+            @media screen and (max-width: 700px) {
+                .div_container{
+                    grid-template-rows: repeat(6, 1fr);
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "header"
+                "main"
+                "sidebar"
+                "widget"
+                "statistics"
+                "footer";
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div_container">
+            <div class="div_griditem a1">Header</div>
+            <div class="div_griditem a2">Main</div>
+            <div class="div_griditem a3">Sidebar</div>
+            <div class="div_griditem a4">Widget</div>
+            <div class="div_griditem a5">Statistics</div>
+            <div class="div_griditem a6">Footer</div>
+        </div>
+    </body>
+</html>

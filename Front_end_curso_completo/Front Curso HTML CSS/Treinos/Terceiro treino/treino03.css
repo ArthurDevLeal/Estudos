@@ -1,0 +1,92 @@
+* {
+    font-family: sans-serif;
+    word-spacing: 2px;
+    margin: 0;
+    padding: 0;
+}
+.mfixo {
+    background: linear-gradient(
+        90deg,
+        rgba(103, 103, 103, 1) 0%,
+        rgba(198, 198, 198, 0.15449929971988796) 50%,
+        rgba(106, 106, 106, 1) 100%
+    );
+
+    position: sticky;
+    width: 100%;
+    top: 0;
+    opacity: 1;
+    background-color: #ccc;
+}
+li {
+    display: inline-block;
+    margin: 30px 10px 0;
+}
+ul {
+    text-align: right;
+    text-decoration: none;
+}
+a {
+    background-color: white;
+    padding: 15px 20px;
+    box-shadow: 1px 1px 10px 1px black;
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    padding: 16px 21px;
+    background-color: #dddbdb;
+}
+header {
+    padding: 10px;
+}
+header h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 2px white;
+    margin-bottom: 15px;
+}
+header p {
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 30px;
+    border-bottom: 1px solid #a0a0a0;
+    text-shadow: 1px 1px 1px #ccc;
+    margin-bottom: 20px;
+}
+.container {
+    background-color: #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 45%;
+    height: 100%;
+    box-sizing: border-box;
+    align-self: flex-start;
+}
+.container h2 {
+    background-color: white;
+    border-bottom: 2px solid #919191;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #ccc;
+}
+.container p {
+    margin: 20px 20px 20px 0px;
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 0px;
+}
+.margem {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 20 0 20;
+}
+.projeto {
+    margin-left: 20px;
+}

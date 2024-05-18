@@ -1,0 +1,115 @@
+html {
+    height: 100%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body {
+    margin: auto;
+    padding: 0;
+    font-family: "Viaoda Libre";
+    color: black;
+}
+.header__h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+header {
+    color: white;
+    background-color: #162028;
+}
+.header__img {
+    display: flex;
+    background-image: url(../imagens/topo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.header__menu_config {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.div__header_ul {
+    display: flex;
+    gap: 50px;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.div__header_li:hover {
+    background-color: #425564;
+    color: white;
+    border-radius: 1.5rem;
+    transition: background-color 0.5s, color 0.5s, padding 0.5s;
+    padding: 0 10px;
+}
+.div__header_li {
+    display: flex;
+    list-style-type: none;
+    color: #425564;
+}
+.article__n1 {
+    text-align: center;
+}
+.article__n1 h2 {
+    font-size: 5rem;
+}
+.article__n1 p {
+    font-size: 2rem;
+    text-align: center;
+}
+.espacamento {
+    margin: 0 20%;
+}
+.section__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5%;
+}
+.section__img img {
+    width: 100%;
+    border-radius: 10%;
+}
+.sections__menus {
+    flex-direction: column;
+    align-items: center;
+}
+h3,
+p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+.article__n2 {
+    background-color: #003d52;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 50%;
+}
+.article__n2 p {
+    color: white;
+    width: 60%;
+}
+.article__n2 h4 {
+    font-size: 7rem;
+    color: white;
+    margin-top: 10%;
+    width: 70%;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #0b171f;
+    color: #6f8597;
+    height: 10vh;
+}

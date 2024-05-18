@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Arrays</title>
+    </head>
+    <body>
+        <h1>Arrays</h1>
+        <script>
+            let arr = [4, NaN, 2, undefined, 4, null, 1, 11, 100, 7];
+            let find = false;
+
+            for (let i = 0; i < arr.length; i++) {
+                let n = arr[i];
+                if (n === null || n === undefined || isNaN(n)) {
+                    find = true;
+                    break
+                }
+            }
+
+            alert("Encontrou null, undefined ou NaN: " + find);
+        </script>
+    </body>
+</html>

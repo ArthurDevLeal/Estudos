@@ -1,0 +1,116 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: Hanken Grotesk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.div_outside {
+    display: flex;
+    justify-content: center;
+}
+.div_result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    background: linear-gradient(180deg, #6643fe, #322bea);
+    padding: 30px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.div_result_p2 {
+    text-align: center;
+    margin: 0;
+}
+.div_result_h1 {
+    font-size: 1.1rem;
+    color: #c4c4c4;
+}
+.div_result_p1 {
+    text-align: center;
+    background: #462ad7;
+    padding: 30px 40px;
+    border-radius: 100%;
+    color: #c4c4c4;
+    font-size: 0.6rem;
+}
+.div_result_p1 span {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+}
+.div_result_h2 {
+    color: white;
+    font-size: 2rem;
+    margin: 0;
+}
+.div_result_p2 {
+    color: #c4c4c4;
+    font-size: 0.8rem;
+}
+
+.div_sumary {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.div_sumary_h3 {
+    color: #303650;
+    font-weight: bold;
+}
+.div_sumary_p {
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    gap: 5px;
+    color: #c4c4c4;
+    font-weight: bold;
+}
+.red {
+    background-color: rgba(255, 0, 0, 0.08);
+    border-radius: 10px;
+}
+.blue {
+    background-color: rgba(0, 0, 255, 0.08);
+    border-radius: 10px;
+}
+.span_number {
+    color: #303650;
+    margin-left: 30px;
+}
+.span_reaction {
+    color: #ff5555;
+    flex: 1;
+}
+.span_memory {
+    color: #ffb424;
+    flex: 1;
+}
+.span_verbal {
+    color: #1dc19d;
+    flex: 1;
+}
+.span_visual {
+    color: #2537da;
+    flex: 1;
+}
+.div_sumary_button {
+    background: linear-gradient(180deg, #6643fe, #322bea);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+.div_sumary_button:hover {
+    cursor: pointer;
+}

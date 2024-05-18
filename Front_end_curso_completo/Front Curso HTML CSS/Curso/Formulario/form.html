@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulário</title>
+
+        <style>
+            label {
+                margin: 5px;
+            }
+            input {
+                margin: 5px;
+            }
+            fieldset {
+                display: flex;
+                flex-direction: column;
+                width: fit-content;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Introdução</legend>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+
+                <label for="filhos">Quantidade de filhos</label>
+                <input
+                    type="number"
+                    name="filhos"
+                    id="filhos"
+                    min="0"
+                    max="1000"
+                />
+
+                <label for="date">Data</label>
+                <input type="date" name="date" id="date" min="2024-01-05" />
+
+                <label>Possui atividades extras</label>
+
+                <input type="radio" name="radio" id="radios" />
+                <label for="radios">Sim</label>
+                <input type="radio" name="radio" id="radion" /><label
+                    for="radion"
+                    >Nao</label
+                >
+                <input type="submit" value="Mandar" />
+
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <input type="text" />
+                <datalist>
+                    <option value="abaca"></option>
+                    <option value="abaca"></option>
+                    <option value="abaca"></option>
+                    <option value="abaca"></option>
+                    <option value="abaca"></option>
+                </datalist>
+            </fieldset>
+            <fieldset>
+                <legend>Entre com sua Menasgem</legend>
+                <textarea name="ms" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+        </form>
+    </body>
+</html>

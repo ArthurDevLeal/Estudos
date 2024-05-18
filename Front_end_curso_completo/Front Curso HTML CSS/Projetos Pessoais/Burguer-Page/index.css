@@ -1,0 +1,155 @@
+:root {
+    ---default_margin: 2em;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    background-color: hsla(0, 0%, 16%, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 2em;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+.div_header_container_tittle {
+    display: flex;
+    align-items: center;
+}
+.div_header_container_tittle h2 {
+    margin-left: 1em;
+    font-size: 2em;
+}
+.orange {
+    color: hsla(38, 93%, 59%, 1);
+}
+.ul_header {
+    display: flex;
+    gap: 3em;
+}
+.li_header {
+    list-style: none;
+}
+.a_li_header {
+    text-decoration: none;
+    color: white;
+}
+.order {
+    background-color: hsla(38, 93%, 59%, 1);
+    padding: 3px;
+    border-radius: 7px;
+}
+.order:hover {
+    background-color: hsla(38, 93%, 49%, 1);
+    text-decoration: underline;
+    transition: background-color 0.1s ease;
+    color: white;
+}
+.div_logopage {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    align-items: center;
+    width: 100%;
+}
+.div_logopage_inside {
+    margin-left: var(---default_margin);
+    font-size: 2em;
+    padding-bottom: 2em;
+}
+
+.h1_logopage {
+    margin: 0;
+    border-bottom: 2px solid hsla(38, 93%, 59%, 1);
+}
+.img_burguer {
+    width: 50%;
+    margin: 0;
+    flex-grow: 1;
+}
+.div_logopage_inside button {
+    border: none;
+    font-size: 1em;
+}
+.div_logopage_inside button a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.2em 1em;
+    text-shadow: 1px 1px 5px black;
+}
+
+/* CARDAPIO */
+
+.h3_tittle {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 1em 0 0 0;
+}
+.p_subtitle {
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+.article_cardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.div_container_allburguers {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5em;
+    grid-template-areas:
+        "b1 b2"
+        "b3 b4";
+    text-align: center;
+}
+.div_container_hamburguer li {
+    list-style-type: none;
+}
+.div_container_hamburguer li,
+h4,
+.p_burguer {
+    text-align: right;
+    color: white;
+    padding-left: 5em;
+}
+.div_container_hamburguer {
+    background-image: url(img/DSC02294\ 1.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 2em;
+    min-width: 50%;
+    border-radius: 3em;
+}
+.price {
+    background-color: hsla(38, 93%, 59%, 1);
+    padding: 3px;
+    border-radius: 7px;
+    width: fit-content;
+    margin-right: auto;
+}
+.p_burguer {
+    background-color: hsla(38, 93%, 59%, 1);
+    padding: 3px;
+    border-radius: 7px;
+    margin-left: auto;
+    width: fit-content;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.div_container_hamburguer h4 {
+    font-size: 2em;
+}

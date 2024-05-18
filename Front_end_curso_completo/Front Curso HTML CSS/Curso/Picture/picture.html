@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            img {
+                max-width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>tag picture</h1>
+        <img
+            src="img/1280.jpg"
+            alt="#"
+            srcset="img/1280.jpg 960w, img/640.jpg 640w, img/480.jpg 480w"
+            sizes="(min-width:900px) 33vw, (min-width: 600px) 50vw, 100vw "
+        />
+        <hr />
+        <picture>
+            <source
+                media="(min-width: 900px)"
+                srcset="img/1280.jpg 1280vw, img/1280.jpg 960w, img/640.jpg 640w, img/480.jpg 480w"
+                sizes="33vw"
+            />
+            <source
+                media="(min-width: 600px)"
+                srcset="img/1280.jpg 1280vw, img/1280.jpg 960w, img/640.jpg 640w, img/480.jpg 480w"
+                sizes="50vw"
+            />
+            <img src="img/1280.jpg" alt="#">
+        </picture>
+    </body>
+</html>

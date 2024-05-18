@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkbox</title>
+
+        <style>
+            .chk1 {
+                display: none;
+            }
+
+            .chk1 + label span {
+                display: inline-block;
+                font-size: 20px;
+                width: 1em;
+                height: 1em;
+                background-color: red;
+            }
+
+            .chk1:checked + label span {
+                background-color: blue;
+                position: relative;
+            }
+
+            .chk1:checked + label span::before {
+                content: "";
+                display: block;
+                border: 0.087em solid white;
+                position: absolute;
+                top: 0.077em;
+                left: 0.38em;
+                right: 0.3em;
+                bottom: 0.3em;
+                transform: rotate(45deg);
+                border-left-color: transparent;
+                border-top-color: transparent;
+            }
+            .switch > span {
+                display: inline-block;
+                width: 40px;
+                height: 15px;
+                background-color: #ccc;
+                border-radius: 10px;
+                position: relative;
+            }
+            .switch input {
+                display: none;
+            }
+            .switch > span::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 2.5px;
+                border-radius: 50%;
+                left: 3px;
+                width: 10px;
+                height: 10px;
+                background-color: white;
+                transition: 0.5s ease;
+            }
+            .switch input:checked + span::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 2.5px;
+                border-radius: 50%;
+                transform: translate(25px);
+                width: 10px;
+                height: 10px;
+                background-color: white;
+                transition: 0.5s ease;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Checkbox</h1>
+        <input type="checkbox" id="html" checked class="chk1" />
+        <label for="html">
+            <span></span>
+            HTML
+        </label>
+        <input type="checkbox" id="css" class="chk1" />
+        <label for="css">
+            <span></span>
+            CSS
+        </label>
+        <input type="checkbox" id="js" class="chk1" />
+        <label for="js">
+            <span></span>
+            Javascript
+        </label>
+        <hr />
+
+        <label class="switch">
+            <input type="checkbox" />
+            <span></span>
+            HTML
+        </label>
+
+        <label class="switch">
+            <input type="checkbox" />
+            <span></span>
+            CSS
+        </label>
+
+        <label class="switch">
+            <input type="checkbox" />
+            <span></span>
+            Javascript
+        </label>
+    </body>
+</html>

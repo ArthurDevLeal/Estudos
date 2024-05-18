@@ -1,0 +1,20 @@
+a[target="_blank"]::after {
+    content: url(imagens/newWindow-icon.png);
+    margin-left: 0.5rem;
+}
+a[href$=".pdf"]::before {
+    content: url(imagens/pdf-icon.gif);
+    margin-right: 0.5rem;
+}
+input[type="checkbox"]:not(:disabled) + label {
+    color: red;
+}
+input[type="checkbox"]:checked + label {
+    color: green;
+}
+input[type="checkbox"]:disabled + label {
+    color: blue;
+}
+ul > li:nth-child(3) {
+    background-color: red;
+}

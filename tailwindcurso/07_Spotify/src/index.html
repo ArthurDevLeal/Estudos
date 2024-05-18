@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <link rel="stylesheet" href="output.css" />
+        <link rel="icon" href="img/favicon.png" />
+        <title>Spotify</title>
+    </head>
+    <body>
+        <header class="bg-black text-white p-4 sticky top-0 w-full flex justify-between md:justify-around items-center">
+            <img src="img/spotify-logo.png" alt="#" class="w-100px" />
+            <nav class="flex">
+                <span class="md:hidden">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <ul class="gap-4 md:flex hidden">
+                    <li class="font-bold hover:text-green-400"><a href="#">Premium</a></li>
+                    <li class="font-bold hover:text-green-400"><a href="#">Ajuda</a></li>
+                    <li class="font-bold border-r-2 pr-4 hover:text-green-400"><a href="#">Baixar</a></li>
+                    <li class="font-bold hover:text-green-400"><a href="#">Inscrever-se</a></li>
+                    <li class="font-bold hover:text-green-400"><a href="#">Log In</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main
+            class="flex flex-col text-center justify-center bg-spotify-logo font-bold bg-blue-600 text-green-400 px-4 md:py-100px h-90vh "
+        >
+            <h1 class="text-6xl md:text-9xl">Escutar muda tudo</h1>
+            <p class="pt-8 md:text-2xl">Milhões de músicas e podcasts para explorar. E nem precisa de cartão de crédito.</p>
+            <button
+                class="bg-green-400 py-2 px-4 text-blue-600 rounded-full mt-8 w-fit mx-auto md:text-2xl hover:transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-white duration-300"
+            >
+                Obtenha o Spotify Free
+            </button>
+        </main>
+        <footer class="bg-black text-white px-4 py-8">
+            <img src="img/spotify-logo.png" alt="#" class="w-100px md:hidden wlv" />
+            <div class="md:flex md:justify-around">
+                <ul class="mt-10">
+                    <li><a href="#" class="text-gray-400">Empresa</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Empregos</a></li>
+                    <li><a href="#">For the Record</a></li>
+                </ul>
+                <ul class="mt-10">
+                    <li><a href="#" class="text-gray-400">Comunidades</a></li>
+                    <li><a href="#">Para artistas</a></li>
+                    <li><a href="#">Desenvolvedores</a></li>
+                    <li><a href="#">Publicidade</a></li>
+                    <li><a href="#">Investidores</a></li>
+                    <li><a href="#">Fornecedores</a></li>
+                </ul>
+                <ul class="mt-10">
+                    <li><a href="#" class="text-gray-400">Links úteis</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                    <li><a href="#">Player da web</a></li>
+                    <li><a href="#">Aplicativo móvel gratis</a></li>
+                </ul>
+                <ul class="flex mt-8 gap-4">
+                    <li>
+                        <a href="#" class="btn_icon"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn_icon"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn_icon"><i class="fa-brands fa-square-facebook"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

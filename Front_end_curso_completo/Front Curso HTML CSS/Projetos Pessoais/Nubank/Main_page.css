@@ -1,0 +1,232 @@
+:root {
+    --sombra: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --verde: #06d406;
+    --laranja: #ffa500;
+    --azul: #0000ff;
+    --transicao_voltar: 0.2s ease;
+    --transicao_ir: 0.5s ease;
+}
+html {
+    min-height: 100%;
+    margin-bottom: 300px;
+}
+body {
+    font-family: "Montserrat";
+    height: 100%;
+    background-color: #f7f7ff;
+}
+.header_nu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+.header_nu img {
+    width: 80px;
+}
+.header_nu button {
+    padding: 10px 50px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.2s ease;
+}
+.header_nu button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 88%);
+    transition: 0.4s ease;
+}
+.section_accountme {
+    background-color: #820ad1;
+    display: flex;
+    align-items: center;
+    padding: 40px 30px;
+    gap: 10%;
+    margin-bottom: 30px;
+}
+.div_money {
+    color: white;
+}
+.div_money p,
+h1,
+h2 {
+    padding: 2px;
+}
+.div_money h2 > span {
+    font-weight: bold;
+}
+.div_money p {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.div_money h1 {
+    font-weight: bold;
+}
+.div_container_ad {
+    display: flex;
+    gap: 25px;
+    width: 30%;
+}
+.div_ad {
+    background-color: rgb(255 255 255 / 0.8);
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+.div_ad p > a {
+    color: #820ad1;
+    text-decoration: none;
+}
+main {
+    width: 100%;
+}
+.section_areas {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 40px;
+    gap: 5%;
+}
+.a_areas {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: var(--sombra);
+    padding: 40px 20px;
+    width: 100%;
+    text-decoration: none;
+    transition: var(--transicao_voltar);
+}
+.a_areas:hover {
+    background-color: hsl(0, 0%, 90%);
+    transition: var(--transicao_ir);
+}
+.a_areas img {
+    transition: var(--transicao_voltar);
+}
+.a_areas:hover img {
+    background-color: rgb(255, 255, 255);
+}
+.a_areas p {
+    margin-top: 5px;
+    color: hsl(0, 0%, 20%);
+}
+.a_areas img {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px 10px;
+    border-radius: 50%;
+}
+.aside {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    width: 20%;
+    background-color: white;
+    box-shadow: var(--sombra);
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.a_aside {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+    color: black;
+    padding: 20px 40px;
+    transition: var(--transicao_voltar);
+}
+.a_aside:hover {
+    background-color: hsl(0, 0%, 90%);
+    transition: var(--transicao_ir);
+}
+.a_aside:nth-child(10) {
+    padding-bottom: 20px;
+}
+.a_aside div {
+    display: flex;
+    gap: 20px;
+}
+.a_aside img {
+    width: fit-content;
+    height: fit-content;
+}
+.div_main_container {
+    display: flex;
+    gap: 50px;
+}
+.section_credit {
+    margin-top: 30px;
+    background-color: white;
+    height: fit-content;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--sombra);
+    border-radius: 10px;
+}
+.div_card {
+    display: flex;
+    align-items: center;
+}
+.div_card h1 {
+    font-weight: bold;
+    margin-left: 5px;
+}
+.div_card span {
+    display: block;
+    height: 10px;
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.div_money_container {
+    display: flex;
+    margin-top: 5%;
+    gap: 40px;
+}
+.div_money_avaliable {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.green {
+    background-color: var(--verde);
+}
+.blue {
+    background-color: var(--azul);
+}
+.orange {
+    background-color: var(--laranja);
+}
+.div_money_avaliable span {
+    position: absolute;
+    left: -15px;
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+.div_money_avaliable h2 {
+    font-weight: bold;
+}
+.span_bar {
+    margin-top: 5%;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background: linear-gradient(
+        to left,
+        var(--laranja) 10%,
+        var(--laranja) 15%,
+        var(--azul) 15%,
+        var(--azul) 40%,
+        var(--verde) 40%,
+        var(--verde) 100%
+    );
+}
